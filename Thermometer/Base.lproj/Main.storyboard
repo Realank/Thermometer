@@ -27,8 +27,8 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGa-av-IcK">
-                                        <rect key="frame" x="0.0" y="200" width="300" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGa-av-IcK">
+                                        <rect key="frame" x="129" y="200" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -55,39 +55,54 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ddx-00-dKS">
-                                <rect key="frame" x="0.0" y="676" width="414" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="cRe-ph-OwQ"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uRH-vg-crk">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwF-S8-AHc">
-                                <rect key="frame" x="20" y="72" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwF-S8-AHc">
+                                <rect key="frame" x="20" y="72" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TU-Pb-CPK">
+                                <rect key="frame" x="211" y="672" width="183" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="用户二">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVq-jr-fXo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiM-5Z-qkE">
+                                <rect key="frame" x="20" y="672" width="183" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ldj-pJ-Kvi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="用户一">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1q-R3-bMh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="OwF-S8-AHc" secondAttribute="leading" id="3m6-3Z-G8N"/>
                             <constraint firstItem="fRE-8V-QEd" firstAttribute="centerX" secondItem="BkA-no-ONd" secondAttribute="centerX" id="3x9-ZF-z4k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1TU-Pb-CPK" secondAttribute="bottom" constant="20" id="8tF-OP-3LE"/>
                             <constraint firstItem="fRE-8V-QEd" firstAttribute="top" secondItem="BkA-no-ONd" secondAttribute="bottom" constant="22" id="DyJ-4H-YV4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HiM-5Z-qkE" secondAttribute="bottom" constant="20" id="SgH-0Y-ekh"/>
+                            <constraint firstItem="HiM-5Z-qkE" firstAttribute="width" secondItem="1TU-Pb-CPK" secondAttribute="width" id="Ufu-Z5-x1m"/>
                             <constraint firstItem="fRE-8V-QEd" firstAttribute="top" secondItem="sGy-ec-Ptr" secondAttribute="bottom" constant="22" id="aDb-H8-0ay"/>
                             <constraint firstItem="fRE-8V-QEd" firstAttribute="centerX" secondItem="sGy-ec-Ptr" secondAttribute="centerX" id="aZR-cO-4OY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HiM-5Z-qkE" secondAttribute="leading" id="emc-tN-VZb"/>
                             <constraint firstItem="BkA-no-ONd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="few-OP-6uX"/>
                             <constraint firstItem="BkA-no-ONd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i1y-Mz-oRY"/>
-                            <constraint firstItem="Ddx-00-dKS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="nBH-g9-LqU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ddx-00-dKS" secondAttribute="bottom" id="vWt-v2-Fje"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ddx-00-dKS" secondAttribute="trailing" constant="-20" id="wOf-Qt-70S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1TU-Pb-CPK" secondAttribute="trailing" id="lcF-bO-gEg"/>
+                            <constraint firstItem="1TU-Pb-CPK" firstAttribute="leading" secondItem="HiM-5Z-qkE" secondAttribute="trailing" constant="8" id="qeH-Gf-Gbq"/>
+                            <constraint firstItem="HiM-5Z-qkE" firstAttribute="height" secondItem="1TU-Pb-CPK" secondAttribute="height" id="wjZ-cG-98z"/>
                             <constraint firstItem="OwF-S8-AHc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zpK-iR-ilE"/>
                         </constraints>
                         <variation key="default">
@@ -110,7 +125,6 @@
                         <outlet property="connectedBTNameLabel" destination="OwF-S8-AHc" id="t4N-So-Qtr"/>
                         <outlet property="sampleTimeLabel" destination="FGa-av-IcK" id="Ujk-WE-3jJ"/>
                         <outlet property="temperatureLabel" destination="sGy-ec-Ptr" id="tgf-HP-Yff"/>
-                        <outlet property="userCollectionView" destination="Ddx-00-dKS" id="J6T-Me-noS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

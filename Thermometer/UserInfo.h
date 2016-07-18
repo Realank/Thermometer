@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSString* temperature;
 @property (nonatomic, strong) NSString* dateString;
+@property (nonatomic, strong) NSDate* date;
 
 - (instancetype)initWithFDDataModel:(FDDataModel*)model;
 - (NSDictionary*)toDict;
@@ -27,7 +28,7 @@
 
 - (NSDictionary*)toDict;
 + (UserInfo*)userInfoWithDict:(NSDictionary*)dict;
-- (void)appendDataToHistory:(FDDataModel*)model;
+- (void)appendDataToHistory:(NSArray<FDDataModel*>*)models;
 
 @end
 

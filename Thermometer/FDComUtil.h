@@ -11,6 +11,13 @@
 
 @class CBPeripheral;
 
+typedef NS_ENUM(NSUInteger, FDHistoryUserType) {
+    FDHisUserNone,
+    FDHisUserOne,
+    FDHisUserTwo,
+    FDHisUserAll
+};
+
 typedef NS_ENUM(NSUInteger, FDRcvDataType) {
     FDRcvDataRT,
     FDRcvDataHistory,
@@ -61,6 +68,7 @@ typedef void(^ReceiveDataBlock)(FDRcvDataType dataType, NSArray<FDDataModel*>* d
            disconnectBlock:(void(^)(FDModel* device, NSError* error))disconnectBlock;
 - (void)disconnectBTDevice:(FDModel*)device;
 
+- (BOOL)requestHistoryDataInDevice:(FDModel *)device forUserType:(FDHistoryUserType)userType withReceiveHistoryBlock:(ReceiveDataBlock)receivedHistoryDataBlock;
 
 
 @end

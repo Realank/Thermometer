@@ -29,6 +29,7 @@ typedef void(^ReadResultUpdateBlock)(NSString* hexString);
 - (BOOL)startReadDataFromBTDevice:(CBPeripheral*)peripheral forService:(NSString*)serviceUUID andCharacteristic:(NSString*)characteristicUUID resultUpdate:(ReadResultUpdateBlock) resultUpdateBlock;
 - (void)endReadDataFromPeripheral:(CBPeripheral*)peripheral forService:(NSString*)serviceUUID andCharacteristic:(NSString*)characteristicUUID;
 
+- (BOOL)canWriteDataToBTDevice:(CBPeripheral *)peripheral forService:(NSString*)serviceUUID andCharacteristic:(NSString*)characteristicUUID;
 - (BOOL)writeDataToBTDevice:(CBPeripheral *)peripheral forService:(NSString*)serviceUUID andCharacteristic:(NSString*)characteristicUUID value:(NSString *)hexString;
 
 @end

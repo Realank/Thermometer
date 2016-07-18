@@ -16,6 +16,7 @@
         NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
         [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
         _dateString = [formatter stringFromDate:model.measureDate];
+        _date = model.measureDate;
     }
     return self;
 }
@@ -39,6 +40,14 @@
     }
     
     return nil;
+}
+
+- (void)setDateString:(NSString *)dateString{
+    _dateString = dateString;
+    
+    NSDateFormatter* formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    _date = [formatter dateFromString:dateString];
 }
 
 @end
@@ -108,13 +117,42 @@
 //    }
 }
 
-- (void)appendDataToHistory:(FDDataModel*)model{
-    HistoryTemperatureData* data = [[HistoryTemperatureData alloc] initWithFDDataModel:model];
+- (void)appendDataToHistory:(NSArray<FDDataModel*>*)models{
     
+    if (models.count <= 0) {
+        return;
+    }
     if (!_historyDatas) {
         _historyDatas = [NSMutableArray array];
     }
-    [_historyDatas addObject:data];
+    
+    for (NSInteger i = models.count - 1; i >= 0; i--) {
+        FDDataModel* model = models[i];
+        BOOL hasSameDataInRom = NO;
+        for (HistoryTemperatureData* historyData in _historyDatas) {
+            if (fabs([model.measureDate timeIntervalSinceDate:historyData.date]) < 3 && fabs(model.temperature - [historyData.temperature doubleValue]) < 0.1) {
+                //  same data
+                hasSameDataInRom = YES;
+                break;
+            }
+        }
+        if (!hasSameDataInRom) {
+            HistoryTemperatureData* data = [[HistoryTemperatureData alloc] initWithFDDataModel:model];
+            [_historyDatas addObject:data];
+        }
+    }
+    
+//    [_historyDatas sortUsingComparator:^NSComparisonResult(HistoryTemperatureData*  _Nonnull obj1, HistoryTemperatureData*  _Nonnull obj2) {
+//        if ([obj1.date timeIntervalSinceDate:obj2.date] > 0) {
+//            return NSOrderedAscending;
+//        }else{
+//            return NSOrderedDescending;
+//        }
+//    }];
+    
+    //remove repeat data
+    
+    
     
 //    NSMutableArray* dictArrayToSave = [NSMutableArray array];
 //    for (HistoryTemperatureData* dataModel in _historyDatas) {
@@ -185,7 +223,7 @@
     NSInteger idx;
     for (idx = 0; idx < contentsArray.count; idx++){
         NSString* currentContent = [contentsArray objectAtIndex:idx];
-        NSLog(@"%@",currentContent);
+//        NSLog(@"%@",currentContent);
         NSArray* components = [currentContent componentsSeparatedByString:@";"];
         if (components.count == 2) {
             NSString* temperature = components[0];

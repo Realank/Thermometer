@@ -198,6 +198,25 @@
     }
 }
 
+- (BOOL)canWriteDataToBTDevice:(CBPeripheral *)peripheral forService:(NSString*)serviceUUID andCharacteristic:(NSString*)characteristicUUID{
+    if (![peripheral.identifier.UUIDString isEqualToString:_connectedPeripheral.identifier.UUIDString]) {
+        BTDLog(@"传入的外设与已连接的不符");
+        return NO;
+    }
+    
+    for (CBService* service in _discoveredServices) {
+        if ([service.UUID.UUIDString isEqualToString:serviceUUID]) {
+            for (CBCharacteristic* characteristic in service.characteristics) {
+                if ([characteristic.UUID.UUIDString isEqualToString:characteristicUUID]) {
+                    
+                    return [self canWriteCharacteristic:peripheral characteristic:characteristic];
+                }
+            }
+        }
+    }
+    return NO;
+}
+
 - (BOOL)writeDataToBTDevice:(CBPeripheral *)peripheral forService:(NSString*)serviceUUID andCharacteristic:(NSString*)characteristicUUID value:(NSString *)hexString{
     
     if (![peripheral.identifier.UUIDString isEqualToString:_connectedPeripheral.identifier.UUIDString]) {
@@ -211,8 +230,7 @@
                 if ([characteristic.UUID.UUIDString isEqualToString:characteristicUUID]) {
                     //send data
                     NSData* data = [DataProcessUtil stringToByte:hexString];
-                    [self writeCharacteristic:peripheral characteristic:characteristic value:data];
-                    return YES;
+                    return [self writeCharacteristic:peripheral characteristic:characteristic value:data];
                 }
             }
         }
@@ -416,11 +434,8 @@
     
 }
 
-//写数据
--(BOOL)writeCharacteristic:(CBPeripheral *)peripheral
-            characteristic:(CBCharacteristic *)characteristic
-                     value:(NSData *)value{
-    
+-(BOOL)canWriteCharacteristic:(CBPeripheral *)peripheral
+               characteristic:(CBCharacteristic *)characteristic{
     //打印出 characteristic 的权限，可以看到有很多种，这是一个NS_OPTIONS，就是可以同时用于好几个值，常见的有read，write，notify，indicate，知知道这几个基本就够用了，前连个是读写权限，后两个都是通知，两种不同的通知方式。
     /*
      typedef NS_OPTIONS(NSUInteger, CBCharacteristicProperties) {
@@ -442,13 +457,26 @@
     
     //只有 characteristic.properties 有write的权限才可以写
     if(characteristic.properties & CBCharacteristicPropertyWrite){
+        
+        return YES;
+    }else{
+        BTDLog(@"该字段不可写！");
+        return NO;
+    }
+}
+
+//写数据
+-(BOOL)writeCharacteristic:(CBPeripheral *)peripheral
+            characteristic:(CBCharacteristic *)characteristic
+                     value:(NSData *)value{
+    
+    if ([self canWriteCharacteristic:peripheral characteristic:characteristic]) {
         /*
          最好一个type参数可以为CBCharacteristicWriteWithResponse或type:CBCharacteristicWriteWithResponse,区别是是否会有反馈
          */
         [peripheral writeValue:value forCharacteristic:characteristic type:CBCharacteristicWriteWithResponse];
         return YES;
     }else{
-        BTDLog(@"该字段不可写！");
         return NO;
     }
     

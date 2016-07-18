@@ -69,6 +69,18 @@
     }];
 }
 
+
+- (BOOL)readHistoryDataFromDevice:(FDModel*)device forUserType:(FDHistoryUserType)userType withResultBlock:(ReceiveDataBlock)receivedDataBlock{
+    
+    return [[FDComUtil sharedInstance] requestHistoryDataInDevice:device forUserType:userType withReceiveHistoryBlock:^(FDRcvDataType dataType, NSArray<FDDataModel *> *dataArray) {
+        if (receivedDataBlock) {
+            receivedDataBlock(dataType, dataArray);
+        }
+    }];
+
+}
+
+
 - (void)destroyConnectData{
     self.connnectedDevice = nil;
     self.lastReadDataArray = nil;

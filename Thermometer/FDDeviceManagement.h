@@ -36,5 +36,5 @@ typedef NS_ENUM(NSUInteger, FDConnectStatus) {
 - (void)stopSearchBT;
 - (void)connectBT:(FDModel*)device;
 - (void)disconnectBT:(FDModel*)device;
-
+- (BOOL)readHistoryDataFromDevice:(FDModel*)device forUserType:(FDHistoryUserType)userType withResultBlock:(ReceiveDataBlock)receivedDataBlock;
 @end

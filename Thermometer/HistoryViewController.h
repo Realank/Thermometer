@@ -10,6 +10,12 @@
 @class UserInfo;
 @interface HistoryViewController : UITableViewController
 
-@property (nonatomic,strong) UserInfo* userInfo;
+typedef NS_ENUM(NSUInteger, ShowHistoryType) {
+    ShowUserOneHistory,
+    ShowUserTwoHistory,
+    ShowCustomUserHistory
+};
+
+@property (nonatomic,assign) ShowHistoryType showUserType;
 
 @end

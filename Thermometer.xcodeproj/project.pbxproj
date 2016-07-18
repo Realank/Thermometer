@@ -28,6 +28,7 @@
 		8C20FEF01D34E37100F6DDFC /* UserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEEE1D34E37100F6DDFC /* UserCollectionViewCell.m */; };
 		8C20FEF11D34E37100F6DDFC /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C20FEEF1D34E37100F6DDFC /* UserCollectionViewCell.xib */; };
 		8C20FEF41D34E92400F6DDFC /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEF31D34E92400F6DDFC /* UserInfo.m */; };
+		8C7E1A861D3CB04700729C0F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E1A851D3CB04700729C0F /* MBProgressHUD.m */; };
 		8C8395DF1D35D1A500FB7F27 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8395DE1D35D1A500FB7F27 /* SettingViewController.m */; };
 		8C8395E61D35D4E000FB7F27 /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8395E41D35D4E000FB7F27 /* UserListViewController.m */; };
 		8C8395E71D35D4E000FB7F27 /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8395E51D35D4E000FB7F27 /* UserListViewController.xib */; };
@@ -90,6 +91,8 @@
 		8C20FEEF1D34E37100F6DDFC /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
 		8C20FEF21D34E92400F6DDFC /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		8C20FEF31D34E92400F6DDFC /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		8C7E1A841D3CB04700729C0F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8C7E1A851D3CB04700729C0F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		8C8395DD1D35D1A500FB7F27 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		8C8395DE1D35D1A500FB7F27 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		8C8395E31D35D4E000FB7F27 /* UserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListViewController.h; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 			children = (
 				8C20FEEA1D34D9A600F6DDFC /* UIView+Unity.h */,
 				8C20FEEB1D34D9A600F6DDFC /* UIView+Unity.m */,
+				8C7E1A841D3CB04700729C0F /* MBProgressHUD.h */,
+				8C7E1A851D3CB04700729C0F /* MBProgressHUD.m */,
 			);
 			name = Unity;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				8C2005711D376D420036FB9A /* FDComUtil.m in Sources */,
 				8C20FEF01D34E37100F6DDFC /* UserCollectionViewCell.m in Sources */,
 				8C2005761D376D9A0036FB9A /* SearchBTViewController.m in Sources */,
+				8C7E1A861D3CB04700729C0F /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

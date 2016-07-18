@@ -8,6 +8,7 @@
 
 #import "UserListViewController.h"
 #import "UserInfo.h"
+#import "HistoryViewController.h"
 
 @interface UserListViewController ()
 
@@ -69,11 +70,11 @@
     cell.textLabel.text = userInfo.name;
     cell.detailTextLabel.text = userInfo.remarks;
     
-    if (indexPath.row == [UsersList choosenIndex]) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }else{
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+//    if (indexPath.row == [UsersList choosenIndex]) {
+//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//    }else{
+//        cell.accessoryType = UITableViewCellAccessoryNone;
+//    }
     return cell;
 }
 
@@ -82,7 +83,7 @@
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    return self.users.count > 1;
+    return YES;
 }
 
 
@@ -106,8 +107,13 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row != [UsersList choosenIndex]) {
         [UsersList setChoosenIndex:indexPath.row];
-        [tableView reloadData];
+//        [tableView reloadData];
     }
+
+    HistoryViewController* vc = [[HistoryViewController alloc]init];
+    vc.showUserType = ShowCustomUserHistory;
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 
