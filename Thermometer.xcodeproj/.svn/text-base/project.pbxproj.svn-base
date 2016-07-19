@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C20056F1D376D420036FB9A /* BTLEConnectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2005681D376D420036FB9A /* BTLEConnectModel.m */; };
+		8C2005701D376D420036FB9A /* DataProcessUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20056A1D376D420036FB9A /* DataProcessUtil.m */; };
+		8C2005711D376D420036FB9A /* FDComUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20056C1D376D420036FB9A /* FDComUtil.m */; };
+		8C2005721D376D420036FB9A /* PendingReadCharacteristicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20056E1D376D420036FB9A /* PendingReadCharacteristicModel.m */; };
+		8C2005761D376D9A0036FB9A /* SearchBTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2005741D376D990036FB9A /* SearchBTViewController.m */; };
+		8C2005771D376D9A0036FB9A /* SearchBTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C2005751D376D9A0036FB9A /* SearchBTViewController.xib */; };
+		8C20057A1D376ED90036FB9A /* FDDeviceManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2005791D376ED90036FB9A /* FDDeviceManagement.m */; };
+		8C2005801D3793150036FB9A /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20057E1D3793150036FB9A /* HistoryViewController.m */; };
+		8C2005811D3793150036FB9A /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C20057F1D3793150036FB9A /* HistoryViewController.xib */; };
+		8C20FEB91D34D95700F6DDFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEB81D34D95700F6DDFC /* main.m */; };
+		8C20FEBC1D34D95700F6DDFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEBB1D34D95700F6DDFC /* AppDelegate.m */; };
+		8C20FEBF1D34D95700F6DDFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEBE1D34D95700F6DDFC /* ViewController.m */; };
+		8C20FEC21D34D95700F6DDFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C20FEC01D34D95700F6DDFC /* Main.storyboard */; };
+		8C20FEC41D34D95700F6DDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C20FEC31D34D95700F6DDFC /* Assets.xcassets */; };
+		8C20FEC71D34D95700F6DDFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C20FEC51D34D95700F6DDFC /* LaunchScreen.storyboard */; };
+		8C20FED21D34D95700F6DDFC /* ThermometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FED11D34D95700F6DDFC /* ThermometerTests.m */; };
+		8C20FEDD1D34D95700F6DDFC /* ThermometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEDC1D34D95700F6DDFC /* ThermometerUITests.m */; };
+		8C20FEEC1D34D9A600F6DDFC /* UIView+Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEEB1D34D9A600F6DDFC /* UIView+Unity.m */; };
+		8C20FEF01D34E37100F6DDFC /* UserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEEE1D34E37100F6DDFC /* UserCollectionViewCell.m */; };
+		8C20FEF11D34E37100F6DDFC /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C20FEEF1D34E37100F6DDFC /* UserCollectionViewCell.xib */; };
+		8C20FEF41D34E92400F6DDFC /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C20FEF31D34E92400F6DDFC /* UserInfo.m */; };
+		8C7E1A861D3CB04700729C0F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E1A851D3CB04700729C0F /* MBProgressHUD.m */; };
+		8C8395DF1D35D1A500FB7F27 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8395DE1D35D1A500FB7F27 /* SettingViewController.m */; };
+		8C8395E61D35D4E000FB7F27 /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8395E41D35D4E000FB7F27 /* UserListViewController.m */; };
+		8C8395E71D35D4E000FB7F27 /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8395E51D35D4E000FB7F27 /* UserListViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C20FECE1D34D95700F6DDFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C20FEAC1D34D95700F6DDFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C20FEB31D34D95700F6DDFC;
+			remoteInfo = Thermometer;
+		};
+		8C20FED91D34D95700F6DDFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C20FEAC1D34D95700F6DDFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C20FEB31D34D95700F6DDFC;
+			remoteInfo = Thermometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C2005671D376D420036FB9A /* BTLEConnectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLEConnectModel.h; sourceTree = "<group>"; };
+		8C2005681D376D420036FB9A /* BTLEConnectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLEConnectModel.m; sourceTree = "<group>"; };
+		8C2005691D376D420036FB9A /* DataProcessUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProcessUtil.h; sourceTree = "<group>"; };
+		8C20056A1D376D420036FB9A /* DataProcessUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProcessUtil.m; sourceTree = "<group>"; };
+		8C20056B1D376D420036FB9A /* FDComUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDComUtil.h; sourceTree = "<group>"; };
+		8C20056C1D376D420036FB9A /* FDComUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDComUtil.m; sourceTree = "<group>"; };
+		8C20056D1D376D420036FB9A /* PendingReadCharacteristicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingReadCharacteristicModel.h; sourceTree = "<group>"; };
+		8C20056E1D376D420036FB9A /* PendingReadCharacteristicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingReadCharacteristicModel.m; sourceTree = "<group>"; };
+		8C2005731D376D990036FB9A /* SearchBTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBTViewController.h; sourceTree = "<group>"; };
+		8C2005741D376D990036FB9A /* SearchBTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBTViewController.m; sourceTree = "<group>"; };
+		8C2005751D376D9A0036FB9A /* SearchBTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchBTViewController.xib; sourceTree = "<group>"; };
+		8C2005781D376ED90036FB9A /* FDDeviceManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDeviceManagement.h; sourceTree = "<group>"; };
+		8C2005791D376ED90036FB9A /* FDDeviceManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDeviceManagement.m; sourceTree = "<group>"; };
+		8C20057D1D3793150036FB9A /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		8C20057E1D3793150036FB9A /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		8C20057F1D3793150036FB9A /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		8C20FEB41D34D95700F6DDFC /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C20FEB81D34D95700F6DDFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C20FEBA1D34D95700F6DDFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C20FEBB1D34D95700F6DDFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C20FEBD1D34D95700F6DDFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8C20FEBE1D34D95700F6DDFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8C20FEC11D34D95700F6DDFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C20FEC31D34D95700F6DDFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C20FEC61D34D95700F6DDFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C20FEC81D34D95700F6DDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C20FECD1D34D95700F6DDFC /* ThermometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThermometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C20FED11D34D95700F6DDFC /* ThermometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThermometerTests.m; sourceTree = "<group>"; };
+		8C20FED31D34D95700F6DDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C20FED81D34D95700F6DDFC /* ThermometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThermometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C20FEDC1D34D95700F6DDFC /* ThermometerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThermometerUITests.m; sourceTree = "<group>"; };
+		8C20FEDE1D34D95700F6DDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C20FEEA1D34D9A600F6DDFC /* UIView+Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Unity.h"; sourceTree = "<group>"; };
+		8C20FEEB1D34D9A600F6DDFC /* UIView+Unity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Unity.m"; sourceTree = "<group>"; };
+		8C20FEED1D34E37100F6DDFC /* UserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCollectionViewCell.h; sourceTree = "<group>"; };
+		8C20FEEE1D34E37100F6DDFC /* UserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCollectionViewCell.m; sourceTree = "<group>"; };
+		8C20FEEF1D34E37100F6DDFC /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		8C20FEF21D34E92400F6DDFC /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		8C20FEF31D34E92400F6DDFC /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		8C7E1A841D3CB04700729C0F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8C7E1A851D3CB04700729C0F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8C8395DD1D35D1A500FB7F27 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		8C8395DE1D35D1A500FB7F27 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		8C8395E31D35D4E000FB7F27 /* UserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListViewController.h; sourceTree = "<group>"; };
+		8C8395E41D35D4E000FB7F27 /* UserListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListViewController.m; sourceTree = "<group>"; };
+		8C8395E51D35D4E000FB7F27 /* UserListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C20FEB11D34D95700F6DDFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C20FECA1D34D95700F6DDFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C20FED51D34D95700F6DDFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C20055A1D372AA80036FB9A /* BLEModel */ = {
+			isa = PBXGroup;
+			children = (
+				8C2005671D376D420036FB9A /* BTLEConnectModel.h */,
+				8C2005681D376D420036FB9A /* BTLEConnectModel.m */,
+				8C2005691D376D420036FB9A /* DataProcessUtil.h */,
+				8C20056A1D376D420036FB9A /* DataProcessUtil.m */,
+				8C2005781D376ED90036FB9A /* FDDeviceManagement.h */,
+				8C2005791D376ED90036FB9A /* FDDeviceManagement.m */,
+				8C20056B1D376D420036FB9A /* FDComUtil.h */,
+				8C20056C1D376D420036FB9A /* FDComUtil.m */,
+				8C20056D1D376D420036FB9A /* PendingReadCharacteristicModel.h */,
+				8C20056E1D376D420036FB9A /* PendingReadCharacteristicModel.m */,
+			);
+			name = BLEModel;
+			sourceTree = "<group>";
+		};
+		8C20057B1D3792E60036FB9A /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				8C20FEBD1D34D95700F6DDFC /* ViewController.h */,
+				8C20FEBE1D34D95700F6DDFC /* ViewController.m */,
+				8C20FEED1D34E37100F6DDFC /* UserCollectionViewCell.h */,
+				8C20FEEE1D34E37100F6DDFC /* UserCollectionViewCell.m */,
+				8C20FEEF1D34E37100F6DDFC /* UserCollectionViewCell.xib */,
+			);
+			name = MainPage;
+			sourceTree = "<group>";
+		};
+		8C20057C1D3792F20036FB9A /* HistoryPage */ = {
+			isa = PBXGroup;
+			children = (
+				8C20057D1D3793150036FB9A /* HistoryViewController.h */,
+				8C20057E1D3793150036FB9A /* HistoryViewController.m */,
+				8C20057F1D3793150036FB9A /* HistoryViewController.xib */,
+			);
+			name = HistoryPage;
+			sourceTree = "<group>";
+		};
+		8C20FEAB1D34D95700F6DDFC = {
+			isa = PBXGroup;
+			children = (
+				8C20FEB61D34D95700F6DDFC /* Thermometer */,
+				8C20FED01D34D95700F6DDFC /* ThermometerTests */,
+				8C20FEDB1D34D95700F6DDFC /* ThermometerUITests */,
+				8C20FEB51D34D95700F6DDFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C20FEB51D34D95700F6DDFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C20FEB41D34D95700F6DDFC /* Thermometer.app */,
+				8C20FECD1D34D95700F6DDFC /* ThermometerTests.xctest */,
+				8C20FED81D34D95700F6DDFC /* ThermometerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C20FEB61D34D95700F6DDFC /* Thermometer */ = {
+			isa = PBXGroup;
+			children = (
+				8C8395E21D35D48700FB7F27 /* Unity */,
+				8C8395E11D35D47300FB7F27 /* Model */,
+				8C20FEBA1D34D95700F6DDFC /* AppDelegate.h */,
+				8C20FEBB1D34D95700F6DDFC /* AppDelegate.m */,
+				8C20057B1D3792E60036FB9A /* MainPage */,
+				8C20057C1D3792F20036FB9A /* HistoryPage */,
+				8C8395E01D35D46200FB7F27 /* Setting */,
+				8C20FEC01D34D95700F6DDFC /* Main.storyboard */,
+				8C20FEC31D34D95700F6DDFC /* Assets.xcassets */,
+				8C20FEC51D34D95700F6DDFC /* LaunchScreen.storyboard */,
+				8C20FEC81D34D95700F6DDFC /* Info.plist */,
+				8C20FEB71D34D95700F6DDFC /* Supporting Files */,
+			);
+			path = Thermometer;
+			sourceTree = "<group>";
+		};
+		8C20FEB71D34D95700F6DDFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C20FEB81D34D95700F6DDFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C20FED01D34D95700F6DDFC /* ThermometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C20FED11D34D95700F6DDFC /* ThermometerTests.m */,
+				8C20FED31D34D95700F6DDFC /* Info.plist */,
+			);
+			path = ThermometerTests;
+			sourceTree = "<group>";
+		};
+		8C20FEDB1D34D95700F6DDFC /* ThermometerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C20FEDC1D34D95700F6DDFC /* ThermometerUITests.m */,
+				8C20FEDE1D34D95700F6DDFC /* Info.plist */,
+			);
+			path = ThermometerUITests;
+			sourceTree = "<group>";
+		};
+		8C8395E01D35D46200FB7F27 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8C8395DD1D35D1A500FB7F27 /* SettingViewController.h */,
+				8C8395DE1D35D1A500FB7F27 /* SettingViewController.m */,
+				8C2005731D376D990036FB9A /* SearchBTViewController.h */,
+				8C2005741D376D990036FB9A /* SearchBTViewController.m */,
+				8C2005751D376D9A0036FB9A /* SearchBTViewController.xib */,
+				8C8395E31D35D4E000FB7F27 /* UserListViewController.h */,
+				8C8395E41D35D4E000FB7F27 /* UserListViewController.m */,
+				8C8395E51D35D4E000FB7F27 /* UserListViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		8C8395E11D35D47300FB7F27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C20FEF21D34E92400F6DDFC /* UserInfo.h */,
+				8C20FEF31D34E92400F6DDFC /* UserInfo.m */,
+				8C20055A1D372AA80036FB9A /* BLEModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8C8395E21D35D48700FB7F27 /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				8C20FEEA1D34D9A600F6DDFC /* UIView+Unity.h */,
+				8C20FEEB1D34D9A600F6DDFC /* UIView+Unity.m */,
+				8C7E1A841D3CB04700729C0F /* MBProgressHUD.h */,
+				8C7E1A851D3CB04700729C0F /* MBProgressHUD.m */,
+			);
+			name = Unity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C20FEB31D34D95700F6DDFC /* Thermometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C20FEE11D34D95700F6DDFC /* Build configuration list for PBXNativeTarget "Thermometer" */;
+			buildPhases = (
+				8C20FEB01D34D95700F6DDFC /* Sources */,
+				8C20FEB11D34D95700F6DDFC /* Frameworks */,
+				8C20FEB21D34D95700F6DDFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thermometer;
+			productName = Thermometer;
+			productReference = 8C20FEB41D34D95700F6DDFC /* Thermometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C20FECC1D34D95700F6DDFC /* ThermometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C20FEE41D34D95700F6DDFC /* Build configuration list for PBXNativeTarget "ThermometerTests" */;
+			buildPhases = (
+				8C20FEC91D34D95700F6DDFC /* Sources */,
+				8C20FECA1D34D95700F6DDFC /* Frameworks */,
+				8C20FECB1D34D95700F6DDFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C20FECF1D34D95700F6DDFC /* PBXTargetDependency */,
+			);
+			name = ThermometerTests;
+			productName = ThermometerTests;
+			productReference = 8C20FECD1D34D95700F6DDFC /* ThermometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C20FED71D34D95700F6DDFC /* ThermometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C20FEE71D34D95700F6DDFC /* Build configuration list for PBXNativeTarget "ThermometerUITests" */;
+			buildPhases = (
+				8C20FED41D34D95700F6DDFC /* Sources */,
+				8C20FED51D34D95700F6DDFC /* Frameworks */,
+				8C20FED61D34D95700F6DDFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C20FEDA1D34D95700F6DDFC /* PBXTargetDependency */,
+			);
+			name = ThermometerUITests;
+			productName = ThermometerUITests;
+			productReference = 8C20FED81D34D95700F6DDFC /* ThermometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C20FEAC1D34D95700F6DDFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Realank;
+				TargetAttributes = {
+					8C20FEB31D34D95700F6DDFC = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 275X96KVEB;
+					};
+					8C20FECC1D34D95700F6DDFC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8C20FEB31D34D95700F6DDFC;
+					};
+					8C20FED71D34D95700F6DDFC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8C20FEB31D34D95700F6DDFC;
+					};
+				};
+			};
+			buildConfigurationList = 8C20FEAF1D34D95700F6DDFC /* Build configuration list for PBXProject "Thermometer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C20FEAB1D34D95700F6DDFC;
+			productRefGroup = 8C20FEB51D34D95700F6DDFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C20FEB31D34D95700F6DDFC /* Thermometer */,
+				8C20FECC1D34D95700F6DDFC /* ThermometerTests */,
+				8C20FED71D34D95700F6DDFC /* ThermometerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C20FEB21D34D95700F6DDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C20FEC71D34D95700F6DDFC /* LaunchScreen.storyboard in Resources */,
+				8C20FEF11D34E37100F6DDFC /* UserCollectionViewCell.xib in Resources */,
+				8C2005771D376D9A0036FB9A /* SearchBTViewController.xib in Resources */,
+				8C20FEC41D34D95700F6DDFC /* Assets.xcassets in Resources */,
+				8C20FEC21D34D95700F6DDFC /* Main.storyboard in Resources */,
+				8C2005811D3793150036FB9A /* HistoryViewController.xib in Resources */,
+				8C8395E71D35D4E000FB7F27 /* UserListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C20FECB1D34D95700F6DDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C20FED61D34D95700F6DDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C20FEB01D34D95700F6DDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C20057A1D376ED90036FB9A /* FDDeviceManagement.m in Sources */,
+				8C20FEBF1D34D95700F6DDFC /* ViewController.m in Sources */,
+				8C2005701D376D420036FB9A /* DataProcessUtil.m in Sources */,
+				8C20056F1D376D420036FB9A /* BTLEConnectModel.m in Sources */,
+				8C20FEBC1D34D95700F6DDFC /* AppDelegate.m in Sources */,
+				8C2005721D376D420036FB9A /* PendingReadCharacteristicModel.m in Sources */,
+				8C20FEEC1D34D9A600F6DDFC /* UIView+Unity.m in Sources */,
+				8C8395DF1D35D1A500FB7F27 /* SettingViewController.m in Sources */,
+				8C2005801D3793150036FB9A /* HistoryViewController.m in Sources */,
+				8C20FEB91D34D95700F6DDFC /* main.m in Sources */,
+				8C8395E61D35D4E000FB7F27 /* UserListViewController.m in Sources */,
+				8C20FEF41D34E92400F6DDFC /* UserInfo.m in Sources */,
+				8C2005711D376D420036FB9A /* FDComUtil.m in Sources */,
+				8C20FEF01D34E37100F6DDFC /* UserCollectionViewCell.m in Sources */,
+				8C2005761D376D9A0036FB9A /* SearchBTViewController.m in Sources */,
+				8C7E1A861D3CB04700729C0F /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C20FEC91D34D95700F6DDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C20FED21D34D95700F6DDFC /* ThermometerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C20FED41D34D95700F6DDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C20FEDD1D34D95700F6DDFC /* ThermometerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C20FECF1D34D95700F6DDFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C20FEB31D34D95700F6DDFC /* Thermometer */;
+			targetProxy = 8C20FECE1D34D95700F6DDFC /* PBXContainerItemProxy */;
+		};
+		8C20FEDA1D34D95700F6DDFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C20FEB31D34D95700F6DDFC /* Thermometer */;
+			targetProxy = 8C20FED91D34D95700F6DDFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C20FEC01D34D95700F6DDFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C20FEC11D34D95700F6DDFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C20FEC51D34D95700F6DDFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C20FEC61D34D95700F6DDFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C20FEDF1D34D95700F6DDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C20FEE01D34D95700F6DDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C20FEE21D34D95700F6DDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Thermometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realank.Thermometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8C20FEE31D34D95700F6DDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Thermometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realank.Thermometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8C20FEE51D34D95700F6DDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThermometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realank.ThermometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermometer.app/Thermometer";
+			};
+			name = Debug;
+		};
+		8C20FEE61D34D95700F6DDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThermometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realank.ThermometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermometer.app/Thermometer";
+			};
+			name = Release;
+		};
+		8C20FEE81D34D95700F6DDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThermometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realank.ThermometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Thermometer;
+			};
+			name = Debug;
+		};
+		8C20FEE91D34D95700F6DDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThermometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.realank.ThermometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Thermometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C20FEAF1D34D95700F6DDFC /* Build configuration list for PBXProject "Thermometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C20FEDF1D34D95700F6DDFC /* Debug */,
+				8C20FEE01D34D95700F6DDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C20FEE11D34D95700F6DDFC /* Build configuration list for PBXNativeTarget "Thermometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C20FEE21D34D95700F6DDFC /* Debug */,
+				8C20FEE31D34D95700F6DDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C20FEE41D34D95700F6DDFC /* Build configuration list for PBXNativeTarget "ThermometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C20FEE51D34D95700F6DDFC /* Debug */,
+				8C20FEE61D34D95700F6DDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C20FEE71D34D95700F6DDFC /* Build configuration list for PBXNativeTarget "ThermometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C20FEE81D34D95700F6DDFC /* Debug */,
+				8C20FEE91D34D95700F6DDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C20FEAC1D34D95700F6DDFC /* Project object */;
+}
